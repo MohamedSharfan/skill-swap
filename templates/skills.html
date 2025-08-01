@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+    <div class="login-box">
+    <form action="/skills" method="post">
+        <h2>ADD YOUR SKILL</h2>
+        <div class="user-box">
+            <input type="text" name="offer" autofocus autocomplete="off" placeholder="">
+            <label>Skills You Can Offer</label>
+        </div>
+
+        <div class="user-box">
+            <input type="text" name="want" autofocus autocomplete="off" placeholder="">
+            <label>Skill You Want to Learn</label>
+        </div>
+
+        <button type="submit" class="btn_lgin">Save</button>
+    </form>
+</div>
+{% endblock %}

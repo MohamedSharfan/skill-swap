@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div class="login-box">
+    <form action="/register" method="post">
+        <h2>WELCOME</h2>
+        <div class="user-box">
+            <input type="text" name="username" autofocus autocomplete="off" placeholder="">
+            <label>Username</label>
+        </div>
+
+        <div class="user-box">
+            <input type="email" name="email" autofocus autocomplete="off" placeholder="">
+            <label>Email</label>
+        </div>
+
+        <div class="user-box">
+            <input type="text" name="password" autofocus autocomplete="off" placeholder="">
+            <label>Password</label>
+        </div>
+
+        <div class="user-box">
+            <input type="text" name="confirmation" autofocus autocomplete="off" placeholder="">
+            <label>Re-Enter Password</label>
+        </div>
+
+        <button type="submit" class="btn_lgin">Register</button>
+    </form>
+</div>
+{% endblock %}

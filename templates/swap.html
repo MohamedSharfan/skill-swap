@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+    <section class="swap_container">
+        <h1>Find a Skill to Swap</h1>
+        <form action="/swapping" method="post">
+            <div class="box">
+                <input type="text" name="want" autofocus autocomplete="off" placeholder="">
+                <label>Skill You Want to Learn</label>
+            </div>
+            <button>SWAP</button>
+        </form>
+    </section>
+    
+{% endblock %}

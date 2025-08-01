@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+    <section class="swap_container">
+        <h1>Skills to Swap</h1>
+        <div class="card">
+            <ul>
+            {% for user in users %}
+                {% if user.skill_name == match %}
+                <li style="text-decoration: none;"><strong>UserName:</strong> {{ user.username }}<br>
+                    <strong>Skill Offer:</strong> {{ user.skill_name }}
+                </li>
+                <a href="{{ url_for('chat', user=user.username) }}"><button>MATCH & CHAT</button></a>
+                {% endif %}
+                
+            {% endfor %}
+            </ul>
+        </div>
+        
+    </section>
+    
+{% endblock %}
